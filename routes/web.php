@@ -29,8 +29,8 @@ $router->get('/institute_list', function (){
 $router->get('/inst_pack', function (){
   return view('admin/inst_pack');
 });
-$router->get('/package', function (){
-  return view('admin/package');
-});
-$router->get('/package_all','packageController@index');
+
+$router->get('/package','packageController@index');
 $router->post('/package','packageController@store');
+$router->post('/package/{id}','packageController@deleteData');
+$router->get('/package/{id}','packageController@edit');

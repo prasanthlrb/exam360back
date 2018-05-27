@@ -338,10 +338,10 @@
 		<script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
 		<script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
 
-		<!--Morris Chart-->
+		<!-- Morris Chart
 		<script src="assets/plugins/morris/morris.min.js"></script>
 		<script src="assets/plugins/morris/raphael.min.js"></script>
-		<script src="assets/plugins/morris/morris.init.js"></script>
+		<script src="assets/plugins/morris/morris.init.js"></script> -->
 
 		<!-- Sparkline -->
 		<script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js" type="text/javascript"></script>
