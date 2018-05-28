@@ -29,8 +29,34 @@ $router->get('/institute_list', function (){
 $router->get('/inst_pack', function (){
   return view('admin/inst_pack');
 });
-
+#Package Process
 $router->get('/package','packageController@index');
 $router->post('/package','packageController@store');
 $router->post('/package/{id}','packageController@deleteData');
 $router->get('/package/{id}','packageController@edit');
+
+
+//Institute process
+$router->post('/institute','InstituteController@store');
+$router->get('/institute','InstituteController@index');
+$router->get('/institute/{id}','InstituteController@edit');
+
+#Exam_Management Process
+#ExamTitle
+$router->post('/extitle','ExamManageController@titleStore');
+$router->post('/extitleupadte','ExamManageController@titleUpdate');
+$router->post('/extitlehide','ExamManageController@titlehide');
+$router->get('/extitle','ExamManageController@titleView');
+$router->get('/extitle/{id}','ExamManageController@titleEdit');
+#Language
+$router->post('/exlan','ExamManageController@lanStore');
+$router->post('/exlanupadte','ExamManageController@lanUpdate');
+$router->post('/exlanhide','ExamManageController@lanhide');
+$router->get('/exlan','ExamManageController@lanView');
+$router->get('/exlan/{id}','ExamManageController@lanEdit');
+#Unit
+$router->post('/exunit','ExamManageController@UnitStore');
+$router->post('/exunitupadte','ExamManageController@UnitUpdate');
+$router->post('/exunithide','ExamManageController@Unithide');
+$router->get('/exunit','ExamManageController@UnitView');
+$router->get('/exunit/{id}','ExamManageController@UnitEdit');

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\models\Package;
+use App\Package;
 use Illuminate\Http\Request;
 
 class packageController extends Controller
@@ -44,7 +44,8 @@ class packageController extends Controller
     }
     public function deleteData($id)
     {
-        return "hi";
+        $Package = Package::find($id);
+        $Package->update(['status'=>1]);
         // if(Package::destory($id)){
         //     return response()->json(['status'=>'success','message'=>'Board Delete Successfully']);
         //   }else{
