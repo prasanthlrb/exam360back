@@ -28,7 +28,7 @@ class ExamManageController extends Controller
          public function titleView()
          {
             $title =  Extitle::all(); 
-            return $title;
+            return view('admin/title',compact('title'));
          }
          public function titleEdit($id)
          {

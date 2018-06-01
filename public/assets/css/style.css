@@ -4,6 +4,10 @@
  *  */
 
 /* Basic Elements */
+
+tr.clickable-row {
+    cursor: pointer;
+}
 body {
 	color: #797979;
 	background-color: #edf0f0;

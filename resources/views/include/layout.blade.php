@@ -24,14 +24,24 @@
 
 		<!--Animation css-->
 		<link href="assets/css/animate.css" rel="stylesheet">
+		<!--bootstrap-wysihtml5-->
+		<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+		<link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+
 
 		<!--Morris Chart CSS -->
 		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+		<!-- Plugins css -->
+        <link href="assets/plugins/notifications/notification.css" rel="stylesheet" />
 
 		<!-- sweet alerts -->
 		<link href="assets/plugins/sweet-alert/sweet-alert.min.css" rel="stylesheet">
 
 		<link href="assets/plugins/toggles/toggles.css" rel="stylesheet" />
+
+		<!-- DataTables -->
+		<link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 
 		<!-- Custom styles -->
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -185,56 +195,21 @@
 						<a href="/dashboard"><i class="ion-home"></i> <span class="nav-label">Dashboard</span></a>
 					</li>
 					
-					<li class="has-submenu">
-						<a href="#"><i class="fa fa-institution"></i> <span class="nav-label">INSTITUTE</span> <span class="caret pull-right m-t-10"></span></a>
-						<ul class="list-unstyled">
-							<li>
-								<a href="/institute">Create Institute</a>
-							</li>
-							<li>
-								<a href="/institute_list">Institute List</a>
-							</li>
-							<li>
-								<a href="/inst_pack">Institute Pack Details</a>
-							</li>
-							<li>
-								<a href="#">Institute Usage Details</a>
-							</li>
-						</ul>
+					<li>
+						<a href="/institute"><i class="fa fa-institution"></i> <span class="nav-label">INSTITUTE</span></a>
+						
 					</li>
 
-					<li class="has-submenu">
-						<a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Questions</span> <span class="caret pull-right m-t-10"></span></a>
-						<ul class="list-unstyled">
-							<li>
-								<a href="#">Exam Title</a>
-							</li>
-							<li>
-								<a href="#">Subject / Category</a>
-							</li>
-							<li>
-								<a href="#">Unit / SubCategory</a>
-							</li>
-							<li>
-								<a href="#">Add Questions</a>
-							</li>
-							
-						</ul>
+					<li>
+						<a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Questions</span></a>
+						
 					</li>
 
 				
 
-					<li class="has-submenu">
-						<a href="#"><i class="ion-settings"></i> <span class="nav-label">Setting</span> <span class="caret pull-right m-t-10"></span></a>
-						<ul class="list-unstyled">
-							<li>
-								<a href="inbox.html">Profile</a>
-							</li>
-							<li>
-								<a href="/package">Package</a>
-							</li>
-							
-						</ul>
+					<li>
+						<a href="/package"><i class="ion-ios7-cart"></i> <span class="nav-label">Package</span></a>
+						
 					</li>
 
 					
@@ -260,64 +235,7 @@
 
 		</section>
 
-		<div class="demo-options">
-			<div class="demo-options-icon">
-				<i class="fa fa-cog"></i>
-			</div>
-			<div class="demo-heading">
-				Demo Settings
-			</div>
-
-			<div class="demo-body">
-
-				<label class="control-label">Fixed Topnav</label>
-				<div class="control-label">
-					<div class="toggle toggle-default active fixedTop"></div>
-				</div>
-
-			</div>
-
-			<div class="demo-body">
-				<div class="option-title">
-					Topnav
-				</div>
-				<ul id="demo-header-color" class="demo-color-list">
-					<li>
-						<span class="themecolor default"></span>
-					</li>
-					<li>
-						<span class="themecolor dark"></span>
-					</li>
-					<li>
-						<span class="themecolor red"></span>
-					</li>
-					<li>
-						<span class="themecolor green"></span>
-					</li>
-					<li>
-						<span class="themecolor yellow"></span>
-					</li>
-					<li>
-						<span class="themecolor pink"></span>
-					</li>
-					<li>
-						<span class="themecolor purple"></span>
-					</li>
-					<li>
-						<span class="themecolor acqua"></span>
-					</li>
-					<li>
-						<span class="themecolor grey"></span>
-					</li>
-					<li>
-						<span class="themecolor white"></span>
-					</li>
-
-				</ul>
-			</div>
-
-		</div>
-
+		
 		<!-- Basic Plugins -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
@@ -364,7 +282,18 @@
 
 		<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
 		<script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+		<!-- Notification -->	
+		<script src="assets/plugins/notifications/notify.min.js"></script>
+        <script src="assets/plugins/notifications/notify-metro.js"></script>
+        <script src="assets/plugins/notifications/notifications.js"></script>
 
+		<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+
+		<!--form validation init-->
+		<script src="assets/plugins/summernote/summernote.min.js"></script>
+		
+		<script src="assets/js/form_editor_demo.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#datatable').dataTable();

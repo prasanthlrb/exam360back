@@ -64,4 +64,37 @@ $('button[name=button]').text('Update');
         }
     });
   }
-  
+  function institute_model(){
+      var pro_method = 'add';
+    $('#institute_management').modal();
+  }
+  $('#exam_title').click(function(){
+    $('#title_modal').modal();
+  });
+
+  function inst_pro(){
+    var formData = new FormData($('#product_form')[0]);
+    
+    $.ajax({
+            url : '/institute',
+            type: "POST",
+            data: formData,
+            contentType: false,
+            processData: false,
+            dataType: "JSON",
+            success: function(data)
+            {
+                console.log(data);
+                $("#product_form")[0].reset();
+               $('#institute_management').modal('hide');
+                 $('.list_ins').load(location.href+' .list_ins');
+                 //$('#product_form').load(location.href+' #product_form');
+                autoHideNotify('success', 'top right', 'Notification','Your Data Save Successfully');
+            }
+        });
+  }
+  jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});

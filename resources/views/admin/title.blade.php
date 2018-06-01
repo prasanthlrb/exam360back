@@ -4,74 +4,49 @@
 <!-- Page Content -->
 				<div class="wraper container-fluid">
 					<div class="page-title">
-						<h3 class="title">Basic Tables</h3>
+						<h3 class="title">Exam Management</h3>
 					</div>
+					
 
+					<!-- List Groups -->
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h3 class="panel-title">Responsive Table</h3>
-								</div>
+								
 								<div class="panel-body">
 									<div class="row">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<div class="table-responsive">
-												<table class="table">
-													<thead>
-														<tr>
-															<th>#</th>
-															<th>First Name</th>
-															<th>Last Name</th>
-															<th>Username</th>
-															<th>Age</th>
-															<th>City</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>1</td>
-															<td>Mark</td>
-															<td>Otto</td>
-															<td>@mdo</td>
-															<td>20</td>
-															<td>Cityname</td>
-														</tr>
-														<tr>
-															<td>2</td>
-															<td>Jacob</td>
-															<td>Thornton</td>
-															<td>@fat</td>
-															<td>20</td>
-															<td>Cityname</td>
-														</tr>
-														<tr>
-															<td>3</td>
-															<td>Larry</td>
-															<td>the Bird</td>
-															<td>@twitter</td>
-															<td>20</td>
-															<td>Cityname</td>
-														</tr>
-														<tr>
-															<td>4</td>
-															<td>Steve</td>
-															<td>Mac Queen</td>
-															<td>@steve</td>
-															<td>20</td>
-															<td>Cityname</td>
-														</tr>
-
-													</tbody>
-												</table>
-											</div>
+										<div class="col-md-6">
+											<h5>List of Exams <a href="javascript:void(0);" id="exam_title"><span class="label label-success">Create Exam <i class="fa fa-plus"></i></span></a></h5>
+											<ul class="list-group">
+												<li class="list-group-item" style="">
+													<a href="" class="pull-right" style="padding-left:5px"><span class="badge bg-danger"><i class="fa fa-trash"></i></span></a>
+													<a href="" class="pull-right" style="padding-left:5px"><span class="badge bg-primary"><i class="fa fa-edit"></i></span></a>
+													<a href="" class="pull-right" style="padding-left:5px"><span class="badge bg-success">14</span></a>
+													<a href="">NEET</a>
+												</li>
+												
+											</ul>
 										</div>
+	
+										<div class="col-md-6">
+											<h5>List of Language  <a href="javascript:void(0);" id="exam_title"><span class="label label-success">Create Language <i class="fa fa-plus"></i></span></a></h5>
+											<div class="list-group">
+												<a href="#" class="list-group-item active"> English </a>
+												
+											</div>
+											<!-- list-group -->
+										</div>
+										<!-- col -->
 									</div>
+									<!-- end row -->
 								</div>
+								<!-- panel-body -->
 							</div>
+							<!-- panel -->
 						</div>
+						<!-- col -->
 					</div>
 					<!-- End row -->
 				</div>
-			
+				
 					 @endsection

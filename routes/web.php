@@ -26,8 +26,11 @@ $router->get('/institute', function (){
 $router->get('/institute_list', function (){
   return view('admin/institute_list');
 });
-$router->get('/inst_pack', function (){
-  return view('admin/inst_pack');
+$router->get('/unit_test', function (){
+  return view('admin/unit');
+});
+$router->get('/question_test', function (){
+  return view('admin/question');
 });
 #Package Process
 $router->get('/package','packageController@index');

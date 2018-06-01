@@ -21,29 +21,30 @@ class InstituteController extends Controller
     {
         $inst =  Institute::all(); 
         $pack = Package::where('status',0)->get();
-        return $pack;
+        return view('admin/institute_list',compact('inst','pack'));
     }
 
     public function store(Request $request)
     {
-        if(!$request->id){
-            
             Institute::create([
                 'name' => $request->name,
                 'mobile'=> $request->mobile,
                 'person'=> $request->person,
                 'email'=> $request->email,
-                'password'=> $request->password,
+                'password'=> app('hash')->make($request->password),
+                'password_dummy'=> $request->password,
                 'gst'=> $request->gst,
                 'address'=> $request->address,
                 'package'=> $request->package,
               ]);
               return response()->json(['message'=>'Successfully Save'],200);
-        }else{
-            $inst = Institute::find($request->id);
-       $inst->update($request->all());
-              return response()->json(['message'=>'Successfully Update'],200);
-        }
+        
+    }
+    public function update(Request $request)
+    {
+        $inst = Institute::find($request->id);
+        $inst->update($request->all());
+        return response()->json(['message'=>'Successfully Update'],200);
     }
     public function edit($id)
     {

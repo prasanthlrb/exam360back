@@ -20,9 +20,11 @@ class CreateInstituteTable extends Migration
             $table->string('person');
             $table->string('email');
             $table->string('password');
+            $table->string('password_dummy');
             $table->string('gst');
             $table->string('address');
             $table->string('package');
+            $table->string('status')->default(0);
             $table->timestamps();
         });
     }
