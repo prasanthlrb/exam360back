@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Institute;
-use App\Package;
+use App\model\Institute;
+use App\model\Package;
 //use App\Institute;
 use Illuminate\Http\Request;
 

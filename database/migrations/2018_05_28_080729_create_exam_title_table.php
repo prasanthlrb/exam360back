@@ -16,8 +16,9 @@ class CreateExamTitleTable extends Migration
         Schema::create('extitles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('user_id');
+            $table->string('language_id');
             $table->string('status')->default(0);
+            $table->string('active')->default(0);
             $table->timestamps();
         });
     }

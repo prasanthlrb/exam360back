@@ -15,38 +15,38 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 		<!--Icon fonts css-->
-		<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" />
-		<link href="assets/plugins/ionicon/css/ionicons.min.css" rel="stylesheet" />
+		<link href="{{ url('assets/plugins/font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
+		<link href="{{ url('assets/plugins/ionicon/css/ionicons.min.css')}}" rel="stylesheet" />
 
 		<!-- Bootstrap CSS -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/css/bootstrap-reset.css" rel="stylesheet">
+		<link href="{{ url('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+		<link href="{{ url('assets/css/bootstrap-reset.css')}}" rel="stylesheet">
 
 		<!--Animation css-->
-		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="{{ url('assets/css/animate.css')}}" rel="stylesheet">
 		<!--bootstrap-wysihtml5-->
-		<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
-		<link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+		
+		<link href="{{ url('assets/plugins/summernote/summernote.css')}}" rel="stylesheet" />
 
 
 		<!--Morris Chart CSS -->
-		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+		<link rel="stylesheet" href="{{ url('assets/plugins/morris/morris.css')}}">
 
 		<!-- Plugins css -->
-        <link href="assets/plugins/notifications/notification.css" rel="stylesheet" />
+        <link href="{{ url('assets/plugins/notifications/notification.css')}}" rel="stylesheet" />
 
 		<!-- sweet alerts -->
-		<link href="assets/plugins/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+		<link href="{{ url('assets/plugins/sweet-alert/sweet-alert.min.css')}}" rel="stylesheet">
 
-		<link href="assets/plugins/toggles/toggles.css" rel="stylesheet" />
+		<link href="{{ url('assets/plugins/toggles/toggles.css')}}" rel="stylesheet" />
 
 		<!-- DataTables -->
-		<link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+		<link href="{{ url('assets/plugins/datatables/jquery.dataTables.min.css')}}" rel="stylesheet" type="text/css" />
 
 		<!-- Custom styles -->
-		<link href="assets/css/style.css" rel="stylesheet">
-		<link href="assets/css/helper.css" rel="stylesheet">
-		<link href="assets/css/style-responsive.css" rel="stylesheet" />
+		<link href="{{ url('assets/css/style.css')}}" rel="stylesheet">
+		<link href="{{ url('assets/css/helper.css')}}" rel="stylesheet">
+		<link href="{{ url('assets/css/style-responsive.css')}}" rel="stylesheet" />
 		
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -201,7 +201,7 @@
 					</li>
 
 					<li>
-						<a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Questions</span></a>
+						<a href="/extitle"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Questions</span></a>
 						
 					</li>
 
@@ -237,63 +237,63 @@
 
 		
 		<!-- Basic Plugins -->
-		<script src="assets/js/jquery-2.1.4.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/modernizr.min.js"></script>
-		<script src="assets/js/pace.min.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/jquery.scrollTo.min.js"></script>
-		<script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-		<script src="assets/plugins/chat/moment-2.2.1.js"></script>
-		<script src="assets/plugins/toggles/toggles.min.js"></script>
+		<script src="{{ url('assets/js/jquery-2.1.4.min.js')}}"></script>
+		<script src="{{ url('assets/js/bootstrap.min.js')}}"></script>
+		<script src="{{ url('assets/js/modernizr.min.js')}}"></script>
+		<script src="{{ url('assets/js/pace.min.js')}}"></script>
+		<script src="{{ url('assets/js/wow.min.js')}}"></script>
+		<script src="{{ url('assets/js/jquery.scrollTo.min.js')}}"></script>
+		<script src="{{ url('assets/js/jquery.nicescroll.js')}}" type="text/javascript"></script>
+		<script src="{{ url('assets/plugins/chat/moment-2.2.1.js')}}"></script>
+		<script src="{{ url('assets/plugins/toggles/toggles.min.js')}}"></script>
 
 		<!-- Counter up -->
-		<script src="assets/js/waypoints.min.js" type="text/javascript"></script>
-		<script src="assets/js/jquery.counterup.min.js" type="text/javascript"></script>
+		<script src="{{ url('assets/js/waypoints.min.js')}}" type="text/javascript"></script>
+		<script src="{{ url('assets/js/jquery.counterup.min.js')}}" type="text/javascript"></script>
 
 		<!-- jQuery Flot Chart-->
-		<script src="assets/plugins/flot-chart/jquery.flot.js"></script>
-		<script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
-		<script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
+		<script src="{{ url('assets/plugins/flot-chart/jquery.flot.js')}}"></script>
+		<script src="{{ url('assets/plugins/flot-chart/jquery.flot.tooltip.min.js')}}"></script>
+		<script src="{{ url('assets/plugins/flot-chart/jquery.flot.resize.js')}}"></script>
 
 		<!-- Morris Chart
-		<script src="assets/plugins/morris/morris.min.js"></script>
-		<script src="assets/plugins/morris/raphael.min.js"></script>
-		<script src="assets/plugins/morris/morris.init.js"></script> -->
+		<script src="{{ url('assets/plugins/morris/morris.min.js')}}"></script>
+		<script src="{{ url('assets/plugins/morris/raphael.min.js')}}"></script>
+		<script src="{{ url('assets/plugins/morris/morris.init.js')}}"></script> -->
 
 		<!-- Sparkline -->
-		<script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js" type="text/javascript"></script>
-		<script src="assets/js/sparkline_demo.js" type="text/javascript"></script>
+		<script src="{{ url('assets/plugins/sparkline-chart/jquery.sparkline.min.js')}}" type="text/javascript"></script>
+		<script src="{{ url('assets/js/sparkline_demo.js')}}" type="text/javascript"></script>
 
 		<!-- Sweet Alerts -->
-		<script src="assets/plugins/sweet-alert/sweet-alert.min.js"></script>
-		<script src="assets/plugins/sweet-alert/sweet-alert.init.js"></script>
+		<script src="{{ url('assets/plugins/sweet-alert/sweet-alert.min.js')}}"></script>
+		<script src="{{ url('assets/plugins/sweet-alert/sweet-alert.init.js')}}"></script>
 
-<script src="assets/plugins/select2/select2.min.js" type="text/javascript"></script>
+<script src="{{ url('assets/plugins/select2/select2.min.js')}}" type="text/javascript"></script>
 		<!-- Todo -->
-		<script src="assets/js/todo.js"></script>
+		<script src="{{ url('assets/js/todo.js')}}"></script>
 
 		<!-- Site Script -->
-		<script src="assets/js/app.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="{{ url('assets/js/app.js')}}"></script>
+		<script src="{{ url('assets/js/script.js')}}"></script>
 
 		<!-- Demo Swicth Color -->
-		<script src="assets/js/demo_color.js"></script>
+		<script src="{{ url('assets/js/demo_color.js')}}"></script>
 
-		<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
-		<script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+		<script src="{{ url('assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+		<script src="{{ url('assets/plugins/datatables/dataTables.bootstrap.js')}}"></script>
 		<!-- Notification -->	
-		<script src="assets/plugins/notifications/notify.min.js"></script>
-        <script src="assets/plugins/notifications/notify-metro.js"></script>
-        <script src="assets/plugins/notifications/notifications.js"></script>
+		<script src="{{ url('assets/plugins/notifications/notify.min.js')}}"></script>
+        <script src="{{ url('assets/plugins/notifications/notify-metro.js')}}"></script>
+        <script src="{{ url('assets/plugins/notifications/notifications.js')}}"></script>
 
-		<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
-		<script type="text/javascript" src="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+		
+		<script type="text/javascript" src="{{ url('assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js')}}"></script>
 
 		<!--form validation init-->
-		<script src="assets/plugins/summernote/summernote.min.js"></script>
+		<script src="{{ url('assets/plugins/summernote/summernote.min.js')}}"></script>
 		
-		<script src="assets/js/form_editor_demo.js"></script>
+		<script src="{{ url('assets/js/form_editor_demo.js')}}"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#datatable').dataTable();

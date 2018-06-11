@@ -5,9 +5,9 @@
 
 			<div class="wraper container-fluid">
 				<div class="page-title">
-					<h3 class="title">Editors</h3>
+					<h3 class="title" id="tit-test">Add Questions</h3>
 				</div>
-
+				<form action="/savequestion" method="post">
 				<div class="row">
 
 					<div class="col-sm-12">
@@ -16,8 +16,8 @@
 								<h3 class="panel-title">Question 1</h3>
 							</div>
 							<div class="panel-body">
-								<div class="summernote">
-									Hello Summernote
+								<div class="summernote" id="summernote" name="question">
+								
 								</div>
 							</div>
 						</div>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="panel-body">
 								<div class="summernote">
-									Hello Summernote
+									
 								</div>
 							</div>
 						</div>
@@ -50,7 +50,7 @@
 							</div>
 							<div class="panel-body">
 								<div class="summernote">
-									Hello Summernote
+									
 								</div>
 							</div>
 						</div>
@@ -64,7 +64,7 @@
 							</div>
 							<div class="panel-body">
 								<div class="summernote">
-									Hello Summernote
+									
 								</div>
 							</div>
 						</div>
@@ -80,11 +80,12 @@
 							</div>
 							<div class="panel-body">
 								<div class="summernote">
-									Hello Summernote
+									
 								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
+				
                     <div class="col-sm-4 col-sm-offset-4">
                         <button type="button" class="btn btn-block btn-lg btn-info">
                             <i class="fa fa-plus fa-1x"></i> Add More options
@@ -101,12 +102,12 @@
                 </button>
                     </div>
                     <div class="col-sm-3 pull-right">
-                        <button type="button" class="btn btn-block btn-lg btn-success">
+                        <button type="button" class="btn btn-block btn-lg btn-success" id="savequestion">
                             Save Questions
                         </button>
                             </div>
                 </div>
-                
+			</form>
 
 			</div>
 			<!-- Page Content Ends -->

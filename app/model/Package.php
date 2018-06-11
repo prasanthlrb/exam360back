@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\model;
 
 
 use Illuminate\Database\Eloquent\Model;
 
-class Language extends Model 
+class Package extends Model 
 {
   
     protected $guarded = [];

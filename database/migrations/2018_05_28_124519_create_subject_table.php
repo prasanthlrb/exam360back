@@ -17,9 +17,9 @@ class CreateSubjectTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('exam_id');
-            $table->string('lang_id');
-            $table->string('user_id');
+            //$table->string('user_id');
             $table->string('status')->default(0);
+            $table->string('active')->default(0);
             $table->timestamps();
         });
     }

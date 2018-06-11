@@ -9,5 +9,18 @@ jQuery(document).ready(function() {
 
 		focus : true // set focus to editable area after initializing summernote
 	});
+	$('#savequestion').click(function(){
+
+		alert('ok');
+		var markupStr = 'hello world';
+		//var textareaValue = $('#summernote').summernote('code');
+		$('.summernote').summernote('code', markupStr);
+		//var content = $('textarea[name="question"]').html($('#tit-test').code());
+		//var markupStr = $('#summernote').eq(1).summernote('code');
+		//$('#tit-test').html(markupStr);
+		//console.log(markupStr);
+		//console.log(textareaValue);
+	});
+	  
 
 }); 
