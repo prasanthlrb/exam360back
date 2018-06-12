@@ -39,12 +39,12 @@ class SubjectController extends Controller
         }
         public function subStore(Request $request)
          {
-            Subject::create([
+                Subject::create([
                    'name' => $request->name,
                    'exam_id'=> $request->exam_id,
                    'status' => $request->status,
-              ]);
-              return response()->json(['message'=>'Successfully Save'],200);    
+                ]);
+            return response()->json(['message'=>'Successfully Save'],200);    
          }
         public function chapStore(Request $request)
          {

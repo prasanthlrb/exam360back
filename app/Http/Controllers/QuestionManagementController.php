@@ -22,12 +22,10 @@ class QuestionManagementController extends Controller
         return view('admin/questionList',compact('title'));
     }
     public function addQuestion($id)
-    {
-
-       
+    {  
         return view('admin/question',compact('id'));
     }
-    public function saveQuestion(Request $request)
+    public function saveQuestion1(Request $request)
     {
       
         $detail=$request->question;
@@ -58,7 +56,25 @@ class QuestionManagementController extends Controller
 		$question->question = $detail;
 		$question->chapter_id = 10;
 		$question->save();
-        	return "Store Successfully";
+            return "Store Successfully";
+    }
+
+
+    public function saveQuestion(Request $request)
+    {
+    
+
+        // Question::create([
+        //     'question' => $request->question
+        // ]);
+
+        $question = new Question;
+        $question->question = $request->question;
+        $question->chapter_id = $request->chapter_id;
+        $question->save();
+
+        return back();
+            
     }
 
     //

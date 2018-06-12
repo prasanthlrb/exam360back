@@ -354,3 +354,13 @@ if(pro_method == 'addlan' || pro_method == 'editlan'){
       theme: 'monokai'
     }
   });
+
+
+
+function save_question(){
+
+   var value = $('#option4').val();
+
+  $("#option3").text( value );
+
+}
